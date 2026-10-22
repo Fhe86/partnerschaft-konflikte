@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plakat 5 Regeln</title><meta name="robots" content="noindex, nofollow"><style>
+:root { --ink:#14141A; --muted:#5E5E68; --koralle:#E8553D; --tuerkis:#137F7A; --gelb:#E9A91A; --paper:#fff; }
+* { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body { margin:0; background:#EDEAE2; color:var(--ink); font-family:Verdana, Arial, Helvetica, sans-serif; line-height:1.45; }
+.bar { position:sticky; top:0; z-index:5; background:var(--ink); color:#fff; padding:10px 18px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+.bar a, .bar button { font:inherit; font-weight:bold; font-size:15px; color:#fff; background:transparent; border:2px solid #fff; border-radius:10px; padding:9px 16px; min-height:44px; cursor:pointer; text-decoration:none; }
+.bar button { background:var(--koralle); border-color:var(--koralle); }
+.bar span { color:#cfcfd6; font-size:14px; }
+.sheet { width:210mm; height:297mm; margin:18px auto; background:var(--paper); padding:12mm 12mm 10mm; box-shadow:0 2px 14px rgba(0,0,0,.18); position:relative; overflow:hidden; }
+.sheet.quer { width:297mm; height:210mm; }
+.sheet::before { content:""; position:absolute; left:0; top:0; width:100%; height:3.5mm; background:linear-gradient(90deg,#E8553D,#E9A91A,#2BA9A3); }
+.kopf { display:flex; justify-content:space-between; align-items:center; gap:8mm; border-bottom:2px solid var(--ink); padding-bottom:2.5mm; margin:2mm 0 4mm; }
+.kopf small { text-transform:uppercase; letter-spacing:.08em; font-weight:bold; font-size:8.5pt; color:var(--koralle); display:block; }
+.kopf .ico { width:20mm; flex:none; }
+.kopf .ico svg { width:100%; height:auto; display:block; }
+h1 { font-family:"Arial Black","Helvetica Neue",Arial,sans-serif; font-weight:900; font-size:20pt; line-height:1.05; margin:1mm 0 0; letter-spacing:-.01em; }
+.name { font-size:9.5pt; white-space:nowrap; }
+.name span { display:inline-block; width:46mm; border-bottom:1.5px solid var(--ink); margin-left:2mm; }
+.auftrag { background:#FBE0DA; border:2px solid var(--ink); border-radius:3mm; padding:2.5mm 4mm; font-size:10pt; margin:0 0 4mm; }
+.auftrag b { color:#B53A25; }
+.karte { border:2px solid var(--ink); border-radius:3mm; padding:3mm 4mm; background:#fff; overflow:hidden; }
+.karte h3 { margin:0 0 1.5mm; font-family:"Arial Black",Arial,sans-serif; font-size:11.5pt; line-height:1.15; }
+.karte p { margin:0 0 1.5mm; font-size:9.5pt; }
+.schneide { border:2px dashed #7d7d86; }
+.linien { height:6.5mm; border-bottom:1.2px solid #9a9aa3; }
+.klein { font-size:8.5pt; color:var(--muted); }
+.avatar { width:100%; height:auto; display:block; }
+@media print {
+  body { background:#fff; }
+  .bar { display:none; }
+  .sheet { margin:0; box-shadow:none; width:auto; height:273mm; padding:0; page-break-after:always; break-after:page; }
+  .sheet.quer { width:auto; height:186mm; }
+  .sheet:last-child { page-break-after:auto; break-after:auto; }
+  .sheet::before { position:relative; margin-bottom:3mm; }
+  @page { size:A4 portrait; margin:12mm; }
+}
+</style><style>@media print { @page { size:A4 landscape; margin:12mm; } }</style></head>
+<body>
+<div class="bar"><a href="../index.html">Zurück zur Stunde</a><button onclick="window.print()">Als PDF speichern / drucken</button><span>Plakat 5 Regeln</span></div>
+
+<div class="sheet quer"><div class="kopf"><div style="flex:1"><small>Abschluss</small><h1>Unsere 5 Regeln für eine gesunde Partnerschaft</h1></div><div class="ico"><svg class="art-svg" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Herz mit Haken"><path d="M150 190 c-60 -44 -96 -78 -96 -118 a46 46 0 0 1 96 -22 a46 46 0 0 1 96 22 c0 40 -36 74 -96 118z" fill="#FBE0DA" stroke="#14141A" stroke-width="5" stroke-linejoin="round"/><path d="M104 96 l34 34 l62 -66" fill="none" stroke="#137F7A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+<p class="klein" style="margin:0 0 3mm;">Vorlage fürs Plakat. Jede Gruppe schlägt eine Regel vor, die Klasse stimmt mit Punkten oder Strichen ab. Die fünf Gewinner kommen aufs große Plakat.</p><div class="karte" style="display:flex;align-items:center;gap:6mm;border-left:10mm solid #E8553D;height:27mm;margin-bottom:3.5mm;"><div style="font-family:Arial Black,Arial;font-size:30pt;color:#E8553D;width:12mm;">1</div><div class="linien" style="flex:1;height:10mm"></div></div><div class="karte" style="display:flex;align-items:center;gap:6mm;border-left:10mm solid #E9A91A;height:27mm;margin-bottom:3.5mm;"><div style="font-family:Arial Black,Arial;font-size:30pt;color:#E9A91A;width:12mm;">2</div><div class="linien" style="flex:1;height:10mm"></div></div><div class="karte" style="display:flex;align-items:center;gap:6mm;border-left:10mm solid #2BA9A3;height:27mm;margin-bottom:3.5mm;"><div style="font-family:Arial Black,Arial;font-size:30pt;color:#2BA9A3;width:12mm;">3</div><div class="linien" style="flex:1;height:10mm"></div></div><div class="karte" style="display:flex;align-items:center;gap:6mm;border-left:10mm solid #137F7A;height:27mm;margin-bottom:3.5mm;"><div style="font-family:Arial Black,Arial;font-size:30pt;color:#137F7A;width:12mm;">4</div><div class="linien" style="flex:1;height:10mm"></div></div><div class="karte" style="display:flex;align-items:center;gap:6mm;border-left:10mm solid #E8553D;height:27mm;margin-bottom:3.5mm;"><div style="font-family:Arial Black,Arial;font-size:30pt;color:#E8553D;width:12mm;">5</div><div class="linien" style="flex:1;height:10mm"></div></div></div>
+</body></html>

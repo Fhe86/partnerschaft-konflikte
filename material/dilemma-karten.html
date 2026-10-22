@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dilemma-Karten Verantwortung</title><meta name="robots" content="noindex, nofollow"><style>
+:root { --ink:#14141A; --muted:#5E5E68; --koralle:#E8553D; --tuerkis:#137F7A; --gelb:#E9A91A; --paper:#fff; }
+* { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body { margin:0; background:#EDEAE2; color:var(--ink); font-family:Verdana, Arial, Helvetica, sans-serif; line-height:1.45; }
+.bar { position:sticky; top:0; z-index:5; background:var(--ink); color:#fff; padding:10px 18px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+.bar a, .bar button { font:inherit; font-weight:bold; font-size:15px; color:#fff; background:transparent; border:2px solid #fff; border-radius:10px; padding:9px 16px; min-height:44px; cursor:pointer; text-decoration:none; }
+.bar button { background:var(--koralle); border-color:var(--koralle); }
+.bar span { color:#cfcfd6; font-size:14px; }
+.sheet { width:210mm; height:297mm; margin:18px auto; background:var(--paper); padding:12mm 12mm 10mm; box-shadow:0 2px 14px rgba(0,0,0,.18); position:relative; overflow:hidden; }
+.sheet.quer { width:297mm; height:210mm; }
+.sheet::before { content:""; position:absolute; left:0; top:0; width:100%; height:3.5mm; background:linear-gradient(90deg,#E8553D,#E9A91A,#2BA9A3); }
+.kopf { display:flex; justify-content:space-between; align-items:center; gap:8mm; border-bottom:2px solid var(--ink); padding-bottom:2.5mm; margin:2mm 0 4mm; }
+.kopf small { text-transform:uppercase; letter-spacing:.08em; font-weight:bold; font-size:8.5pt; color:var(--koralle); display:block; }
+.kopf .ico { width:20mm; flex:none; }
+.kopf .ico svg { width:100%; height:auto; display:block; }
+h1 { font-family:"Arial Black","Helvetica Neue",Arial,sans-serif; font-weight:900; font-size:20pt; line-height:1.05; margin:1mm 0 0; letter-spacing:-.01em; }
+.name { font-size:9.5pt; white-space:nowrap; }
+.name span { display:inline-block; width:46mm; border-bottom:1.5px solid var(--ink); margin-left:2mm; }
+.auftrag { background:#FBE0DA; border:2px solid var(--ink); border-radius:3mm; padding:2.5mm 4mm; font-size:10pt; margin:0 0 4mm; }
+.auftrag b { color:#B53A25; }
+.karte { border:2px solid var(--ink); border-radius:3mm; padding:3mm 4mm; background:#fff; overflow:hidden; }
+.karte h3 { margin:0 0 1.5mm; font-family:"Arial Black",Arial,sans-serif; font-size:11.5pt; line-height:1.15; }
+.karte p { margin:0 0 1.5mm; font-size:9.5pt; }
+.schneide { border:2px dashed #7d7d86; }
+.linien { height:6.5mm; border-bottom:1.2px solid #9a9aa3; }
+.klein { font-size:8.5pt; color:var(--muted); }
+.avatar { width:100%; height:auto; display:block; }
+@media print {
+  body { background:#fff; }
+  .bar { display:none; }
+  .sheet { margin:0; box-shadow:none; width:auto; height:273mm; padding:0; page-break-after:always; break-after:page; }
+  .sheet.quer { width:auto; height:186mm; }
+  .sheet:last-child { page-break-after:auto; break-after:auto; }
+  .sheet::before { position:relative; margin-bottom:3mm; }
+  @page { size:A4 portrait; margin:12mm; }
+}
+</style></head>
+<body>
+<div class="bar"><a href="../index.html">Zurück zur Stunde</a><button onclick="window.print()">Als PDF speichern / drucken</button><span>Dilemma-Karten Verantwortung</span></div>
+
+<div class="sheet"><div class="kopf"><div style="flex:1"><small>Erarbeitung · Verantwortung</small><h1>Zwei Fälle, eine Entscheidung</h1></div><div class="ico"><svg class="art-svg" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Herz mit Haken"><path d="M150 190 c-60 -44 -96 -78 -96 -118 a46 46 0 0 1 96 -22 a46 46 0 0 1 96 22 c0 40 -36 74 -96 118z" fill="#FBE0DA" stroke="#14141A" stroke-width="5" stroke-linejoin="round"/><path d="M104 96 l34 34 l62 -66" fill="none" stroke="#137F7A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+<p class="klein" style="margin:0 0 3mm;"><b>Ausschneiden:</b> Gruppen mit gerader Nummer bekommen Fall 1, die anderen Fall 2. Entscheidet euch für A oder B. „Kommt drauf an“ gilt nicht. Alle Figuren sind erfunden.</p>
+<div style="display:grid;grid-template-rows:1fr 1fr;gap:5mm;height:226mm;"><div class="karte schneide" style="padding:0;display:flex;flex-direction:column;">
+<div style="display:flex;gap:4mm;align-items:center;background:#E8553D;border-bottom:2px solid #14141A;padding:2mm 4mm;">
+<div style="width:26mm;flex:none;background:#fff;border:2px solid #14141A;border-radius:2mm;padding:1mm;"><svg class="art-svg" viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Handy mit Kamera und Fragezeichen"><rect x="95" y="8" width="110" height="224" rx="18" fill="#fff" stroke="#14141A" stroke-width="4"/><rect x="108" y="30" width="84" height="170" rx="8" fill="#D5EFEC"/><circle cx="150" cy="104" r="30" fill="#fff" stroke="#14141A" stroke-width="4"/><circle cx="150" cy="104" r="14" fill="#137F7A" stroke="#14141A" stroke-width="3"/><circle cx="150" cy="172" r="12" fill="#E9A91A" stroke="#14141A" stroke-width="3"/><circle cx="236" cy="62" r="24" fill="#E8553D" stroke="#14141A" stroke-width="4"/><text x="236" y="72" text-anchor="middle" font-family="Arial Black,Arial" font-size="30" fill="#fff">?</text><circle cx="150" cy="214" r="6" fill="none" stroke="#14141A" stroke-width="3"/></svg></div>
+<div><small style="font-size:8pt;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#fff;">Fall 1</small><h3 style="font-size:15pt;margin:0;color:#fff;">„Nur für mich“</h3></div></div>
+<div style="padding:3mm 4.5mm;display:flex;flex-direction:column;flex:1;">
+<p style="font-size:10.5pt;line-height:1.4;">Mia (15) und Jonas (15) sind seit fünf Monaten zusammen. Er schreibt: „Schick mir ein Nacktbild. Das bleibt unter uns. Wenn du mich liebst, traust du dich.“ Mia ist unsicher.</p>
+<p style="font-size:10.5pt;"><b style="color:#B53A25;">A</b> Mia schickt das Bild, weil sie Jonas vertraut und keinen Streit will.</p>
+<p style="font-size:10.5pt;"><b style="color:#137F7A;">B</b> Mia sagt Nein und erklärt ihm, warum sie das nicht möchte.</p>
+<p style="font-size:10.5pt;font-weight:bold;margin-top:1mm;">Was bedeutet „Wenn du mich liebst“ hier? Und wer trägt die Verantwortung, wenn so ein Bild später bei anderen landet?</p>
+<div style="margin-top:auto;"><p class="klein" style="margin:0;">Wir entscheiden uns für A / B, weil:</p><div class="linien" style="height:7mm"></div><div class="linien" style="height:7mm"></div>
+<p class="klein" style="margin:1mm 0 0;">Wer trägt hier Verantwortung, und wofür? ______________________________</p></div></div></div><div class="karte schneide" style="padding:0;display:flex;flex-direction:column;">
+<div style="display:flex;gap:4mm;align-items:center;background:#E9A91A;border-bottom:2px solid #14141A;padding:2mm 4mm;">
+<div style="width:26mm;flex:none;background:#fff;border:2px solid #14141A;border-radius:2mm;padding:1mm;"><svg class="art-svg" viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zug im Bahnhof mit Herz"><rect x="20" y="150" width="260" height="22" fill="#EBD9B8" stroke="#14141A" stroke-width="4"/><rect x="40" y="70" width="170" height="80" rx="14" fill="#2BA9A3" stroke="#14141A" stroke-width="4"/><rect x="54" y="86" width="36" height="30" rx="6" fill="#fff" stroke="#14141A" stroke-width="3"/><rect x="104" y="86" width="36" height="30" rx="6" fill="#fff" stroke="#14141A" stroke-width="3"/><rect x="154" y="86" width="36" height="30" rx="6" fill="#fff" stroke="#14141A" stroke-width="3"/><polygon points="210,70 258,150 210,150" fill="#137F7A" stroke="#14141A" stroke-width="4" stroke-linejoin="round"/><circle cx="80" cy="176" r="12" fill="#14141A"/><circle cx="170" cy="176" r="12" fill="#14141A"/><path d="M150 56 c-12 -9 -19 -16 -19 -24 a9 9 0 0 1 17 -5 a9 9 0 0 1 17 5 c0 8 -7 15 -15 24z" fill="#E8553D" stroke="#14141A" stroke-width="3.5"/></svg></div>
+<div><small style="font-size:8pt;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#fff;">Fall 2</small><h3 style="font-size:15pt;margin:0;color:#fff;">„Ich weiß nicht …“</h3></div></div>
+<div style="padding:3mm 4.5mm;display:flex;flex-direction:column;flex:1;">
+<p style="font-size:10.5pt;line-height:1.4;">Nach drei Monaten besucht Jonas Mia in Berlin. Abends küssen sie sich. Jonas möchte weitergehen. Mia sagt leise: „Ich weiß nicht …“ Jonas: „Wir sehen uns doch so selten.“</p>
+<p style="font-size:10.5pt;"><b style="color:#B53A25;">A</b> Jonas hört auf, fragt nach und sagt, dass Warten völlig okay ist.</p>
+<p style="font-size:10.5pt;"><b style="color:#137F7A;">B</b> Mia sagt „Doch, passt schon“, damit der Abend nicht kippt.</p>
+<p style="font-size:10.5pt;font-weight:bold;margin-top:1mm;">Ist ein Ja, das aus Druck oder Angst vor Streit kommt, wirklich ein Ja? Wie sieht ein Ja aus, dem beide trauen können?</p>
+<div style="margin-top:auto;"><p class="klein" style="margin:0;">Wir entscheiden uns für A / B, weil:</p><div class="linien" style="height:7mm"></div><div class="linien" style="height:7mm"></div>
+<p class="klein" style="margin:1mm 0 0;">Wer trägt hier Verantwortung, und wofür? ______________________________</p></div></div></div></div></div>
+</body></html>
